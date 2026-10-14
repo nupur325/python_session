@@ -1,0 +1,4 @@
+data in file remains consistent
+file will remain until explicitly deleted
+First file created
+File operations in python

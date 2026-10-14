@@ -1,0 +1,5 @@
+s = input("Enter a sentence:")
+split = s.split()
+long = max(split, key = len)
+print("List of words:",split)
+print("Longest word: ",long)

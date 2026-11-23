@@ -47,3 +47,37 @@ sleep() vs join()
     pauses current thread                      waits for another thread
     takes time as argument                     takes thread object
     used for delay                             used for synchronization 
+
+Lock:
+A lock is a synchronization mechanism provided by the threading module that allows one thread to access
+a shared resource at a time.
+It Prevents race condition and ensures data consistency when multiple threads work on same data.
+
+Create lock:
+    lock = threading.Lock
+acquire():
+    lock.acquire()
+    if the lock is free, the thread acquires it.
+    if another thread already holds it, the thread waits.
+release():
+    lock.release()
+    other waiting thread can now acquire the lock
+
+Working of lock:
+Thread1 -> acquire() -> Critical section -> release()
+Thread2 -> waits until lock is released
+Thread2 -> acquire() -> Critical section -> release()
+
+a
+
+Multithreading vs asyncio
+Feature                 Multithreading                   Asyncio
+
+Workers             Multiple threads                Usually one thread
+Uses                threading module                asyncio module
+Syntax              start(),join()                  async, await
+Best for            CPU + I/O tasks                 I/O bound tasks
+Memory usage        More                            Less
+Context switching   Os controlled                   Python event loop
+Complexity          Easy to understand              Harder initially
+Scalability         

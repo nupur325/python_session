@@ -26,5 +26,24 @@ TypeError
 *Finally: The finally block lets you execute code, regardless of the result of the try-and except blocks.
 
 Multithreading:
-A light weight process that performs a specific task within a program
-A thread is the smallest unit of execution in a process.
+A light weight process that performs a specific task within a program.
+A thread is the smallest unit of execution in a process. 
+Allows you to run multiple threads concurrently within a single process
+
+Thread life cycle in python:
+New - thread is created but not yet started. It has been allocated resources but its not executing
+Running - A thread is started and currentlyl executing it code
+Blocked - A thread is waiting fir an event or condition to occur, such as waiting for I/O operation
+Terminated - A thread has completed its execution or has been explicitly Terminated
+
+Key functions:
+start() - begin thread execution
+sleep() - pause thread (import from asyncio/datetime)
+join() - wait for thread 
+thread() - create thread 
+
+sleep() vs join()
+            sleep()                                     Join()
+    pauses current thread                      waits for another thread
+    takes time as argument                     takes thread object
+    used for delay                             used for synchronization 

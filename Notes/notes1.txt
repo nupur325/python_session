@@ -1,0 +1,30 @@
+UNIT 6
+Exception Handling, Multithreading:
+Exception: 
+An exception is an error that occurs during program execution. Exception handling allows a program to continue running without crashing unexpectedly.
+When a python script encounters a situation that it cannot cope with, it raises an exception.
+An exception is a python object that represents an error.
+Exception handling in Python refers to managing runtime errors that may occur during the execution of a program.
+
+*ADVANTAGES:
+1. Prevents abnormal termination
+2. Improves program reliability
+
+COMMON EXCEPTIONS:
+
+  Exception                                       Cause
+ZeroDivisionError                               Divide by zero
+ValueError
+NameError                                       Undefined Variable
+IndexError
+FileNotFoundError
+TypeError
+
+*Try: The try block lets you test a block of code for errors.
+*Except: The except block lets you handle the error.
+*Else: The else block lets you execute code when there is no error.
+*Finally: The finally block lets you execute code, regardless of the result of the try-and except blocks.
+
+Multithreading:
+A light weight process that performs a specific task within a program
+A thread is the smallest unit of execution in a process.

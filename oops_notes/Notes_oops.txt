@@ -1,0 +1,42 @@
+OOP - python is an oops language, allowing you to structure your code using classes
+and objects for better organization and reusability.
+
+ADVANTAGES:
+    Provides a clear structure of programs
+    Makes code easier to maintain, reuse and debug
+    Helps keep you code clean
+
+Class & object
+Class : Attributes associated with Value
+class MyCLass:
+    x = 5
+object:
+p1 = MyCLass()
+print(p1.x)
+Methos: functions
+
+__init__(self) - constructor
+    automatically called when an object is created
+    used yo  initialze object Attributes
+    self refers to the current object
+    __init__ can take parameters
+    every object gets it own of instance
+
+types of data member
+1. Instance data member - 
+    declared using self.
+    each object gets it own Copy 
+    changes in one object do not affect other object
+
+2. Class data members - 
+    declared inside the class but outside methods
+    shared by all the objects of the class
+    only one copy exists(if changes are made it will be refelected to all)
+
+3. Private data members
+    begin with double underscore(_)
+    cannot be directly accessed outside the class
+    used for data hiding and encapsulation
+
+**VIVA**
+Data member comparison

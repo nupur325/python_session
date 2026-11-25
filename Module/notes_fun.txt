@@ -1,0 +1,91 @@
+Datetime Module:
+Function                        Purpose
+date.today()                    
+
+Functional Programming tools:
+1. map(): Transform each element
+          Iterate of modified values
+
+2. filter(): Select 
+
+Different ways to import:
+1. import Emtire Module: import math
+2. Import Specific Functions: from math import factorial
+3. Import Multiple Functions: from math import sqrt, factorial
+4. Import with Alias: import math as m
+5. Import Everything: from math import * (not recommended for good programming practice)
+
+Package:
+A package is a collection of modules organized in directories.
+Python packages are a way to organize and structure code by grouping related modules into directories.
+A package is essentially a folder that contains an__init__.py file and one or more Python files(modules).
+Allows modules to be easily shared and distributed across different applications.
+
+Key Components of a Python Package:
+1. Module: A single Python file containing reusable code
+2. Package: A directory containing modules and special __init__.py
+3. Sub-Packages: 
+
+CREATING AND ACCESSING PACKAGES:
+1. Create a directory: create a folder that will act as the package root.
+2. Add Modules: inside the directory, add Python files(modules). Each module can contain related functions or classes.
+3. Add __init__.py: add an __init__.py file to the directory. This file tells Python that the directory should be treated as a package
+4. Create Sub-Packages(Optional):
+5. Import Modules:
+
+SYNTAX: 
+from package_name.module_name import function_name
+
+Namespace Package:
+Definition: A package distributed across multiple directories without an init.py file.
+Purpose: 1. Distributed development
+         2. Plugin 
+
+Traditional Package vs Namespace Package:
+Traditional Package : 1. has init.py
+                      2. Single directory
+                      3. Easy setup
+                      4. Small applications
+Namespace Package: 1. No init.py
+                   2. 
+
+Feature                         Module                              Package
+1. Definition                   Single Python file                  Collection of modules
+2. Extension                    .py                                 directory
+3. Purpose                      Organize code in one file           Organize related modules
+4. contains                     Functions, classes, variables       Modules and sub-packages
+5. import Example               import calculator                   import mymath
+6. Size                         Small unit                          Larger unit
+
+**asyncio:
+It provides the tools needed to write asynchronous, non-blocking code.
+
+Key characteristics:
+1. Uses coroutines defined with async def
+2. Uses await to pause execution until an operation completes
+3. Runs everything inside an event loop that schedules tasks cooperatively
+4. Enables single-threaded concurrency without multithreading overhead
+5. Forms the foundation of many async frameworks(eg: FastAPI, aiohttp)
+
+Core Components:
+1. Event Loop: The event loop manages and schedules asynchronous tasks, deciding when each coroutine runs. It cycles through pending jobs
+               and resumes them when their awaited operations complete.
+SYNTAX: asyncio.run(main()) - for other than jupyter notebook
+For jupyter notebook SYNTAX: await main()  #main is function name
+
+2. Coroutines: Coroutines are functions declared with async def that can be paused and resumed. They represent units of asynchronous work.
+Eg: 
+async def hello():
+    print("Hello")
+
+**asyncio is a built in module and we have to call it.**
+
+3. Tasks: Tasks wrap coroutines and allow them to run concurrently. You create them with asyncio.create_task().
+
+4. Awaitables: Objects that can be awaited - typically coroutines, tasks, or certain asyncio primitives.
+Eg: await asyncio.sleep(2)
+
+**coroutines are the functions**
+
+*Use asyncio when your program:
+1. Performs many I/o bound ops

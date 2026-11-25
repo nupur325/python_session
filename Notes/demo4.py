@@ -7,7 +7,8 @@ def cube(num):
      print(f"Cube: {num*num*num}")
      time.sleep(2)
 t1 = threading.Thread(target=square,args=(4,)) #write "4," so it takes arg as tuple 
-t2 = threading.Thread(target=cube,args=(4,))
+t2 = threading.Thread(target=cube,args=(4,)) #args takes tuple so give ',' after 4
+#t1 = Thread(target = square,args=(4,))
 
 t1.start()
 t2.start()

@@ -80,4 +80,6 @@ Best for            CPU + I/O tasks                 I/O bound tasks
 Memory usage        More                            Less
 Context switching   Os controlled                   Python event loop
 Complexity          Easy to understand              Harder initially
-Scalability         
+Scalability         Limited thread                  Thousands of tasks
+
+When to use         File download                   Chat applications

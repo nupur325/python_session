@@ -10,7 +10,7 @@ Class & object
 Class : Attributes associated with Value
 class MyCLass:
     x = 5
-object:
+object: instance of an object
 p1 = MyCLass()
 print(p1.x)
 Methos: functions
@@ -21,6 +21,7 @@ __init__(self) - constructor
     self refers to the current object
     __init__ can take parameters
     every object gets it own of instance
+
 
 types of data member
 1. Instance data member - 
@@ -37,6 +38,28 @@ types of data member
     begin with double underscore(_)
     cannot be directly accessed outside the class
     used for data hiding and encapsulation
+        set using setter method
+        get using getter method
 
 **VIVA**
 Data member comparison
+
+Feature           Instance                  Class data              private data
+belongs to          object                      class                   object
+declared using         self.var
+
+for private data member only**
+getter method -> gets(reads) the value of an Attributes
+for each private variable create a separate get method
+    def get_variable(self):
+        return self.__variable
+
+setter method -> sets(updates) the value of an atteibute
+    def set_variable(self,value):
+        self.__variable = value
+
+ADVANTAGES of getter
+    1.data hiding
+    2.encapsulation
+    3.data validation
+    4.contoller

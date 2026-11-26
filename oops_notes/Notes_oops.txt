@@ -63,3 +63,19 @@ ADVANTAGES of getter
     2.encapsulation
     3.data validation
     4.contoller
+
+**exam mein getter setter ayega**
+
+Constructor (__init__): a special method automatically called when an object is created. 
+    it is used to initialze instance variables
+    Uses:
+        initialize object data
+        assign default values
+        open files or database connections
+        prepare object for used
+    Types -
+        Default - no parameters except self
+        Parametererized - Accepts additional parameters
+
+Destructor (__del__): a special method automatically called when an object is destroyed. 
+    It is used to release resources such as files, network connections ,etc.

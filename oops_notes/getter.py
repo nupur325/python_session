@@ -1,3 +1,4 @@
+#getter method
 class Student:
     def __init__(self):
         self.__marks = 85

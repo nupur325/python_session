@@ -96,3 +96,8 @@ Q- transaction process, order process, operations Performed
 
 Property object 
 allows you to control access 
+
+Method Resolution order
+
+using super() in multiple inheritance
+used by cihld class to call a method from the parent class

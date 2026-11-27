@@ -79,3 +79,20 @@ Constructor (__init__): a special method automatically called when an object is 
 
 Destructor (__del__): a special method automatically called when an object is destroyed. 
     It is used to release resources such as files, network connections ,etc.
+
+@classmethod
+a class method is a method that operates on class variables rather than instance variables.
+It is defined using the @classmethod decorator and accepts cls as its first parameter.
+It is a decorator that tells Python that the method belongs to the class rather than any specific object.
+cls -> class
+
+            self                                            cls
+        refers to current object                        refers to current class
+        used in instance methods                        used in class methods
+        object required to call method                  can be called using class name
+        accesses instance variables                     accesses class variables
+
+Q- transaction process, order process, operations Performed
+
+Property object 
+allows you to control access 
